@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCr3ILrxf2TXO6OXczlc0WDkjomNn2vcJ0",
+    authDomain: "smartsheet-618e1.firebaseapp.com",
+    databaseURL: "https://smartsheet-618e1.firebaseio.com",
+    projectId: "smartsheet-618e1",
+    storageBucket: "smartsheet-618e1.appspot.com",
+    messagingSenderId: "562460815514",
+    appId: "1:562460815514:web:937cec28bf19383d6b2f23",
+    measurementId: "G-M0V63DLV9W"
+    }
 };
 
 /*
