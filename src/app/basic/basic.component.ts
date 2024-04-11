@@ -18,6 +18,10 @@ export class BasicComponent implements OnInit {
 
   ngOnInit() {
 
+this.getStudents();
+  }
+
+  getStudents(){
     this.crudService.read_Students().subscribe(data => {
 
       this.students = data.map(e => {
@@ -29,7 +33,7 @@ export class BasicComponent implements OnInit {
           Address: e.payload.doc.data()['Address'],
         };
       })
-      console.log(this.students);
+      console.log(this.students, 'read_Students');
 
     });
   }
@@ -43,10 +47,10 @@ export class BasicComponent implements OnInit {
       this.studentName = "";
       this.studentAge = undefined;
       this.studentAddress = "";
-      console.log(resp);
+      console.log(resp, 'CreateRecord');
     })
       .catch(error => {
-        console.log(error);
+        console.log(error, 'error');
       });
   }
 

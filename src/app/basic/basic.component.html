@@ -15,7 +15,8 @@
       <input type="text" class="form-control" [(ngModel)]="studentAddress" placeholder="Address">
     </div>
     <div class="col-md-3">
-      <button type="button" (click)="CreateRecord()" [disabled]="!studentName || !studentAge || !studentAddress" class="btn btn-primary">+
+      <!-- [disabled]="!studentName || !studentAge || !studentAddress" -->
+      <button type="button" (click)="CreateRecord()"  class="btn btn-primary">+
         Create Student</button>
     </div>
   </div>

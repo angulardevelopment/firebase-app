@@ -7,8 +7,8 @@ import { BasicComponent } from './basic/basic.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-// import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+// import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
@@ -22,12 +22,15 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // AngularFireModule.initializeApp(environment.firebase),
-    // AngularFirestoreModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    
     // provideFirebaseApp(() => initializeApp({ ... })),
     // provideFirestore(() => getFirestore()),
+  
     AngularFireDatabaseModule,
-    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
