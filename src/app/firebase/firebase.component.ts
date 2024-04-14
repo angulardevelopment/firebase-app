@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { CrudService } from '../crud.service';
 
 @Component({
-  selector: 'app-basic',
-  templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.scss']
+  selector: 'app-firebase',
+  templateUrl: './firebase.component.html',
+  styleUrls: ['./firebase.component.scss']
 })
-export class BasicComponent implements OnInit {
+export class FirebaseComponent implements OnInit {
 
 
   students: any;
